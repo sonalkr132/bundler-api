@@ -32,14 +32,14 @@ describe BundlerApi::GemHelper do
           s.version = "#{version}"
           s.platform = "#{platform}"
 
-          s.authors = ["Terence Lee"]
-          s.date = "2010-10-24"
-          s.description = "Foo"
-          s.email = "foo@example.com"
-          s.homepage = "http://www.foo.com"
-          s.require_paths = ["lib"]
+          s.authors = ["some Lee"]
+          s.date = "2011-10-24"
+          s.description = "Foo Foo Foo"
+          s.email = "bored@example.com"
+          s.homepage = "http://www.google.com"
+          s.require_paths = ["lib", "/"]
           s.rubyforge_project = "foo"
-          s.summary = "Foo"
+          s.summary = "Bar"
         end
 GEMSPEC
     }
