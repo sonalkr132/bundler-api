@@ -22,7 +22,7 @@ gem 'sequel_pg', require: false
 gem 'sinatra'
 gem 'json'
 gem 'compact_index'
-
+gem 'coveralls', require: false
 group :development do
   gem 'pry-byebug'
 end
