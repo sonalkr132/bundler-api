@@ -158,13 +158,14 @@ describe BundlerApi::Web do
     let(:payload){ {:name => "rack", :version => "1.0.0",
       :platform => "ruby", :prerelease => false} }
 
-    it "removes the spec from the database" do
+    it "removes the spec from the database and updates indexed status and yanked_info_checksum" do
       post url, JSON.dump(payload)
 
       expect(last_response).to be_ok
       res = JSON.parse(last_response.body)
       expect(res["name"]).to eq("rack")
       expect(res["version"]).to eq("1.0.0")
+      puts res.inspect
     end
   end
 
